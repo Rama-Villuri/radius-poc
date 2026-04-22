@@ -1,0 +1,12 @@
+# FreeRADIUS user database (authorize file).
+# Format:  username   Cleartext-Password := "password"
+#              Reply-Message = "optional message"
+#
+# These are the credentials users will SSH with.
+# A matching local account must exist on the Raspberry Pi (see raspi-setup/setup.sh).
+
+radius-testuser   Cleartext-Password := "TestPass123!"
+    Reply-Message = "RADIUS auth OK for %{User-Name}"
+
+radius-user2      Cleartext-Password := "AnotherPass456!"
+    Reply-Message = "RADIUS auth OK for %{User-Name}"
