@@ -17,7 +17,7 @@ set -euo pipefail
 
 # ── Configuration ──────────────────────────────────────────────────────────────
 # TODO: set these before running
-MAC_MINI_IP="MAC_MINI_IP"          # e.g. 192.168.1.10
+MAC_MINI_IP="192.168.0.132"          # e.g. 192.168.1.10
 SHARED_SECRET="radius-shared-secret"
 RADIUS_USERS=("radius-testuser" "radius-user2")
 # ───────────────────────────────────────────────────────────────────────────────
